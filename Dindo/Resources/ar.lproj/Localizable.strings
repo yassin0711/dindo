@@ -1,0 +1,189 @@
+/* التطبيق */
+"app.name" = "Dindo";
+"app.tagline" = "مزرعة الديك الرومي، يومًا بعد يوم";
+"currency" = "د.ت";
+
+/* علامات التبويب */
+"tab.dashboard" = "الرئيسية";
+"tab.flocks" = "الدفعات";
+"tab.farm" = "مزرعتي";
+"tab.settings" = "الإعدادات";
+
+/* عام */
+"common.save" = "حفظ";
+"common.cancel" = "إلغاء";
+"common.delete" = "حذف";
+"common.edit" = "تعديل";
+
+/* الحالات */
+"state.loading" = "جارٍ التحميل…";
+"state.error.title" = "عذرًا!";
+"state.retry" = "إعادة المحاولة";
+"error.offline" = "لا يوجد اتصال بالإنترنت. تحقق من الشبكة.";
+"error.unknown" = "حدث خطأ. حاول مرة أخرى.";
+"error.firestore" = "تعذّر حفظ بياناتك أو قراءتها. تحقق من الاتصال.";
+"error.weather" = "تعذّر تحميل حالة الطقس.";
+
+/* تسجيل الدخول */
+"auth.login.button" = "تسجيل الدخول";
+"auth.google" = "المتابعة باستخدام Google";
+"auth.email" = "البريد الإلكتروني";
+"auth.password" = "كلمة المرور";
+"auth.name" = "الاسم";
+"auth.confirm" = "تأكيد كلمة المرور";
+"auth.forgot.link" = "نسيت كلمة المرور؟";
+"auth.forgot.title" = "نسيت كلمة المرور";
+"auth.forgot.message" = "أدخل بريدك الإلكتروني وسنرسل لك رابطًا لاختيار كلمة مرور جديدة.";
+"auth.forgot.button" = "إرسال الرابط";
+"auth.forgot.sent" = "تم إرسال البريد! تفقّد صندوق الوارد.";
+"auth.signup.link" = "ليس لديك حساب؟ سجّل الآن";
+"auth.signup.title" = "إنشاء حساب";
+"auth.signup.button" = "التسجيل";
+"auth.logout" = "تسجيل الخروج";
+"auth.error.invalidEmail" = "عنوان البريد الإلكتروني غير صالح.";
+"auth.error.emailInUse" = "يوجد حساب بهذا البريد الإلكتروني.";
+"auth.error.weakPassword" = "كلمة المرور ضعيفة (6 أحرف على الأقل).";
+"auth.error.wrongCredentials" = "البريد الإلكتروني أو كلمة المرور غير صحيحة.";
+
+/* التحقق من النماذج */
+"validation.name" = "يجب أن يحتوي الاسم على حرفين على الأقل.";
+"validation.email" = "أدخل بريدًا إلكترونيًا صالحًا (مثال: ali@gmail.com).";
+"validation.password" = "يجب أن تحتوي كلمة المرور على 6 أحرف على الأقل.";
+"validation.confirm" = "كلمتا المرور غير متطابقتين.";
+"validation.required" = "هذا الحقل إجباري.";
+"validation.count" = "أدخل عددًا صحيحًا بين 1 و100000.";
+"validation.count.used" = "غير ممكن: عدد الطيور النافقة أو المبيعة أكبر.";
+"validation.integer" = "أدخل عددًا صحيحًا موجبًا.";
+"validation.birds.tooMany" = "هذا العدد أكبر من عدد الطيور الحية في الدفعة.";
+"validation.number" = "أدخل رقمًا موجبًا (مثال: 12.5).";
+"validation.weight" = "الوزن كبير جدًا: 40 كغ كحد أقصى.";
+"validation.amount" = "أدخل مبلغًا أكبر من 0.";
+
+/* الرئيسية */
+"dashboard.hello" = "مرحبًا %@ 👋";
+"dashboard.offline" = "دون اتصال: سيتم إرسال بياناتك عند عودة الشبكة.";
+"dashboard.activeFlocks" = "الدفعات الحالية";
+"dashboard.alive" = "الطيور الحية";
+"dashboard.mortality" = "نسبة النفوق";
+"dashboard.sold" = "الطيور المبيعة";
+"dashboard.activeTitle" = "الدفعات الحالية";
+"dashboard.empty.title" = "لا توجد دفعة حالية";
+"dashboard.empty.message" = "أضف دفعتك الأولى في تبويب الدفعات.";
+
+/* الطقس */
+"weather.loading" = "جارٍ تحميل الطقس…";
+"weather.cached" = "دون اتصال: آخر طقس محفوظ.";
+"weather.advice.hot" = "حرارة: قم بتهوية المبنى وقدّم ماءً باردًا.";
+"weather.advice.cold" = "برد: دفّئ مكان الصيصان.";
+"weather.advice.ok" = "ظروف مناسبة للديك الرومي.";
+
+/* الدفعات */
+"flocks.filter" = "تصفية";
+"flocks.active" = "الحالية";
+"flocks.finished" = "المنتهية";
+"flocks.add" = "إضافة دفعة";
+"flocks.empty.title" = "لا توجد دفعات";
+"flocks.empty.message" = "الدفعة هي مجموعة صيصان وصلت في اليوم نفسه.";
+"flocks.delete.title" = "حذف هذه الدفعة؟";
+"flocks.delete.message" = "سيتم حذف جميع بياناتها ولقاحاتها ومبيعاتها.";
+
+/* الدفعة */
+"flock.new" = "دفعة جديدة";
+"flock.edit" = "تعديل الدفعة";
+"flock.missing" = "هذه الدفعة لم تعد موجودة";
+"flock.section.info" = "معلومات";
+"flock.section.arrival" = "الوصول";
+"flock.section.follow" = "المتابعة";
+"flock.name" = "اسم الدفعة";
+"flock.building" = "المبنى";
+"flock.strain" = "السلالة";
+"flock.strain.local" = "محلية";
+"flock.arrival" = "تاريخ الوصول";
+"flock.count" = "عدد الصيصان عند الوصول";
+"flock.finished" = "دفعة منتهية";
+"flock.age" = "العمر";
+"flock.day" = "اليوم %d";
+"flock.aliveCount" = "%d حية";
+"flock.weight" = "متوسط الوزن";
+"flock.deaths" = "النافقة";
+"flock.sold" = "المبيعة";
+"flock.feed" = "العلف المستهلك";
+"flock.fcr" = "معامل التحويل الغذائي";
+
+/* البيانات اليومية */
+"record.add" = "بيانات اليوم";
+"record.date" = "التاريخ";
+"record.section.health" = "الصحة";
+"record.section.food" = "التغذية";
+"record.deaths" = "النافقة";
+"record.feed" = "العلف (كغ)";
+"record.water" = "الماء (ل)";
+"record.weight" = "متوسط الوزن (كغ)";
+"record.weight.hint" = "اختياري: زِن بعض الطيور واكتب المتوسط.";
+
+/* السجل */
+"history.title" = "السجل والوزن";
+"history.chart" = "منحنى الوزن";
+"history.records" = "البيانات";
+"history.empty.title" = "لا توجد بيانات";
+"history.empty.message" = "أدخل بيانات اليوم الأولى من صفحة الدفعة.";
+
+/* اللقاحات */
+"vaccines.title" = "اللقاحات";
+"vaccines.add" = "لقاح جديد";
+"vaccines.upcoming" = "قادمة";
+"vaccines.done" = "منجزة";
+"vaccines.empty.title" = "لا توجد لقاحات";
+"vaccines.empty.message" = "خطّط للقاحات الدفعة واحصل على تذكير.";
+"vaccine.name" = "اسم اللقاح";
+"vaccine.suggestions" = "لقاحات شائعة";
+"vaccine.date" = "التاريخ";
+"vaccine.reminder" = "ذكّرني";
+"vaccine.reminder.hint" = "سيصلك إشعار يوم اللقاح على الساعة 8 صباحًا. استشر الطبيب البيطري.";
+"vaccine.reminder.title" = "لقاح اليوم";
+"vaccine.reminder.body" = "اليوم: %@ للدفعة %@.";
+"vaccine.newcastle" = "مرض نيوكاسل";
+"vaccine.he" = "التهاب الأمعاء النزفي";
+"vaccine.cholera" = "كوليرا الطيور";
+"vaccine.pox" = "جدري الطيور";
+
+/* المبيعات والمصاريف */
+"money.title" = "المبيعات والمصاريف";
+"money.add" = "عملية جديدة";
+"money.kind" = "النوع";
+"money.kind.sale" = "بيع";
+"money.kind.expense" = "مصروف";
+"money.label.sale" = "الوصف (مثال: بيع في السوق)";
+"money.label.expense" = "الوصف (مثال: علف، بيطري)";
+"money.amount" = "المبلغ";
+"money.birds" = "الطيور المبيعة";
+"money.birdsCount" = "%d طيور";
+"money.date" = "التاريخ";
+"money.sales" = "المبيعات";
+"money.expenses" = "المصاريف";
+"money.profit" = "الربح";
+"money.history" = "العمليات";
+"money.empty.title" = "لا توجد عمليات";
+"money.empty.message" = "أضف مبيعاتك ومصاريفك لمتابعة الربح.";
+
+/* مزرعتي */
+"farm.marker" = "مزرعتي";
+"farm.map.hint" = "المس الخريطة لتحديد مكان مزرعتك: سيُعرض طقس هذا المكان.";
+"farm.now" = "الآن";
+"farm.temperature" = "الحرارة";
+"farm.humidity" = "الرطوبة";
+"farm.wind" = "الرياح";
+"farm.forecast" = "توقعات 5 أيام";
+
+/* الإعدادات */
+"settings.title" = "الإعدادات";
+"settings.account" = "الحساب";
+"settings.appearance" = "المظهر";
+"settings.theme" = "السمة";
+"settings.language" = "اللغة";
+"settings.about" = "حول";
+"settings.version" = "الإصدار";
+"settings.api" = "الطقس";
+"theme.system" = "النظام";
+"theme.light" = "فاتح";
+"theme.dark" = "داكن";

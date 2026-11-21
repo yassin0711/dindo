@@ -1,0 +1,12 @@
+# Xcode (fichiers personnels et générés)
+build/
+DerivedData/
+xcuserdata/
+*.xcuserstate
+
+# Divers
+.DS_Store
+
+# Configuration Firebase : jamais envoyée sur GitHub tant que le dépôt est public
+# (la partager entre membres de l'équipe par un autre moyen)
+GoogleService-Info.plist

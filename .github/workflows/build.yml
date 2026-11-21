@@ -1,0 +1,45 @@
+# Compilation de Dindo sur un Mac de GitHub, avec Xcode 16.2 comme au labo
+name: Compilation iOS
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: macos-15
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Choisir Xcode 16.2
+        run: |
+          for v in 16.2 16.3 16.4 16.1; do
+            if [ -d "/Applications/Xcode_$v.app" ]; then
+              sudo xcode-select -s "/Applications/Xcode_$v.app"
+              break
+            fi
+          done
+          echo "::notice title=Xcode::$(xcodebuild -version | tr '\n' ' ')"
+
+      - name: Installer le simulateur iOS de cet Xcode (s'il manque)
+        run: |
+          sdk=$(xcrun --sdk iphonesimulator --show-sdk-version)
+          if ! xcrun simctl list runtimes | grep -q "iOS $sdk"; then
+            xcodebuild -downloadPlatform iOS
+          fi
+
+      - name: Compiler
+        run: |
+          set -o pipefail
+          xcodebuild -project Dindo.xcodeproj -scheme Dindo \
+            -destination 'generic/platform=iOS Simulator' \
+            -derivedDataPath build CODE_SIGNING_ALLOWED=NO build 2>&1 | tee build.log
+
+      - name: Erreurs
+        if: failure()
+        run: |
+          errors=$(grep -E "error:" build.log | sort -u | head -40)
+          [ -z "$errors" ] && errors=$(tail -40 build.log)
+          echo "::error title=Erreurs::$(printf '%s\n' "$errors" | awk 'BEGIN{ORS="%0A"} {gsub(/%/,"%25"); print}')"

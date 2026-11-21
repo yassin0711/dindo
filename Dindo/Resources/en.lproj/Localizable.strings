@@ -1,0 +1,189 @@
+/* Application */
+"app.name" = "Dindo";
+"app.tagline" = "Your turkey farm, day after day";
+"currency" = "TND";
+
+/* Tabs */
+"tab.dashboard" = "Home";
+"tab.flocks" = "Flocks";
+"tab.farm" = "My farm";
+"tab.settings" = "Settings";
+
+/* Common */
+"common.save" = "Save";
+"common.cancel" = "Cancel";
+"common.delete" = "Delete";
+"common.edit" = "Edit";
+
+/* States */
+"state.loading" = "Loading…";
+"state.error.title" = "Oops!";
+"state.retry" = "Try again";
+"error.offline" = "No Internet connection. Check your network.";
+"error.unknown" = "Something went wrong. Please try again.";
+"error.firestore" = "Unable to save or read your data. Check your connection.";
+"error.weather" = "Unable to load the weather.";
+
+/* Sign in */
+"auth.login.button" = "Sign in";
+"auth.google" = "Continue with Google";
+"auth.email" = "Email";
+"auth.password" = "Password";
+"auth.name" = "Name";
+"auth.confirm" = "Confirm password";
+"auth.forgot.link" = "Forgot password?";
+"auth.forgot.title" = "Forgot password";
+"auth.forgot.message" = "Enter your email: we will send you a link to choose a new password.";
+"auth.forgot.button" = "Send link";
+"auth.forgot.sent" = "Email sent! Check your inbox.";
+"auth.signup.link" = "No account yet? Sign up";
+"auth.signup.title" = "Create an account";
+"auth.signup.button" = "Sign up";
+"auth.logout" = "Sign out";
+"auth.error.invalidEmail" = "This email address is not valid.";
+"auth.error.emailInUse" = "An account already exists with this email.";
+"auth.error.weakPassword" = "Password too weak (at least 6 characters).";
+"auth.error.wrongCredentials" = "Wrong email or password.";
+
+/* Form validation */
+"validation.name" = "The name must have at least 2 characters.";
+"validation.email" = "Enter a valid email address (example: ali@gmail.com).";
+"validation.password" = "The password must have at least 6 characters.";
+"validation.confirm" = "The two passwords do not match.";
+"validation.required" = "This field is required.";
+"validation.count" = "Enter a whole number between 1 and 100,000.";
+"validation.count.used" = "Not possible: more turkeys have already died or been sold.";
+"validation.integer" = "Enter a positive whole number.";
+"validation.birds.tooMany" = "This number is more than the living turkeys of the flock.";
+"validation.number" = "Enter a positive number (example: 12.5).";
+"validation.weight" = "Weight too high: 40 kg maximum.";
+"validation.amount" = "Enter an amount greater than 0.";
+
+/* Home */
+"dashboard.hello" = "Hello %@ 👋";
+"dashboard.offline" = "Offline: your entries will be sent when the network is back.";
+"dashboard.activeFlocks" = "Active flocks";
+"dashboard.alive" = "Living turkeys";
+"dashboard.mortality" = "Mortality";
+"dashboard.sold" = "Turkeys sold";
+"dashboard.activeTitle" = "Active flocks";
+"dashboard.empty.title" = "No active flock";
+"dashboard.empty.message" = "Add your first flock in the Flocks tab.";
+
+/* Weather */
+"weather.loading" = "Loading weather…";
+"weather.cached" = "Offline: last saved weather.";
+"weather.advice.hot" = "Heat: ventilate the barn and give fresh water.";
+"weather.advice.cold" = "Cold: heat the poults' area.";
+"weather.advice.ok" = "Good conditions for your turkeys.";
+
+/* Flocks */
+"flocks.filter" = "Filter";
+"flocks.active" = "Active";
+"flocks.finished" = "Finished";
+"flocks.add" = "Add a flock";
+"flocks.empty.title" = "No flock";
+"flocks.empty.message" = "A flock is a batch of poults that arrived on the same day.";
+"flocks.delete.title" = "Delete this flock?";
+"flocks.delete.message" = "All its entries, vaccines and sales will be deleted.";
+
+/* Flock */
+"flock.new" = "New flock";
+"flock.edit" = "Edit flock";
+"flock.missing" = "This flock no longer exists";
+"flock.section.info" = "Information";
+"flock.section.arrival" = "Arrival";
+"flock.section.follow" = "Follow-up";
+"flock.name" = "Flock name";
+"flock.building" = "Barn";
+"flock.strain" = "Strain";
+"flock.strain.local" = "Local";
+"flock.arrival" = "Arrival date";
+"flock.count" = "Poults on arrival";
+"flock.finished" = "Flock finished";
+"flock.age" = "Age";
+"flock.day" = "D%d";
+"flock.aliveCount" = "%d alive";
+"flock.weight" = "Average weight";
+"flock.deaths" = "Deaths";
+"flock.sold" = "Sold";
+"flock.feed" = "Feed eaten";
+"flock.fcr" = "Feed conversion ratio";
+
+/* Daily entry */
+"record.add" = "Daily entry";
+"record.date" = "Date";
+"record.section.health" = "Health";
+"record.section.food" = "Feeding";
+"record.deaths" = "Deaths";
+"record.feed" = "Feed (kg)";
+"record.water" = "Water (L)";
+"record.weight" = "Average weight (kg)";
+"record.weight.hint" = "Optional: weigh a few turkeys and write the average.";
+
+/* History */
+"history.title" = "History and weight";
+"history.chart" = "Weight curve";
+"history.records" = "Entries";
+"history.empty.title" = "No entry";
+"history.empty.message" = "Make your first daily entry from the flock page.";
+
+/* Vaccines */
+"vaccines.title" = "Vaccines";
+"vaccines.add" = "New vaccine";
+"vaccines.upcoming" = "To do";
+"vaccines.done" = "Done";
+"vaccines.empty.title" = "No vaccine";
+"vaccines.empty.message" = "Plan the flock's vaccines and get a reminder.";
+"vaccine.name" = "Vaccine name";
+"vaccine.suggestions" = "Common vaccines";
+"vaccine.date" = "Date";
+"vaccine.reminder" = "Remind me";
+"vaccine.reminder.hint" = "A notification will be sent on the vaccine day at 8 AM. Ask your vet for advice.";
+"vaccine.reminder.title" = "Vaccine to do";
+"vaccine.reminder.body" = "Today: %@ for flock %@.";
+"vaccine.newcastle" = "Newcastle disease";
+"vaccine.he" = "Hemorrhagic enteritis";
+"vaccine.cholera" = "Fowl cholera";
+"vaccine.pox" = "Fowl pox";
+
+/* Sales and expenses */
+"money.title" = "Sales and expenses";
+"money.add" = "New operation";
+"money.kind" = "Type";
+"money.kind.sale" = "Sale";
+"money.kind.expense" = "Expense";
+"money.label.sale" = "Description (e.g. market sale)";
+"money.label.expense" = "Description (e.g. feed, vet)";
+"money.amount" = "Amount";
+"money.birds" = "Turkeys sold";
+"money.birdsCount" = "%d turkeys";
+"money.date" = "Date";
+"money.sales" = "Sales";
+"money.expenses" = "Expenses";
+"money.profit" = "Profit";
+"money.history" = "Operations";
+"money.empty.title" = "No operation";
+"money.empty.message" = "Add your sales and expenses to follow the profit.";
+
+/* My farm */
+"farm.marker" = "My farm";
+"farm.map.hint" = "Tap the map to place your farm: the weather will be for that place.";
+"farm.now" = "Right now";
+"farm.temperature" = "Temperature";
+"farm.humidity" = "Humidity";
+"farm.wind" = "Wind";
+"farm.forecast" = "5-day forecast";
+
+/* Settings */
+"settings.title" = "Settings";
+"settings.account" = "Account";
+"settings.appearance" = "Appearance";
+"settings.theme" = "Theme";
+"settings.language" = "Language";
+"settings.about" = "About";
+"settings.version" = "Version";
+"settings.api" = "Weather";
+"theme.system" = "System";
+"theme.light" = "Light";
+"theme.dark" = "Dark";
