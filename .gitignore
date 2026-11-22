@@ -7,6 +7,5 @@ xcuserdata/
 # Divers
 .DS_Store
 
-# Configuration Firebase : jamais envoyée sur GitHub tant que le dépôt est public
-# (la partager entre membres de l'équipe par un autre moyen)
-GoogleService-Info.plist
+# Note : GoogleService-Info.plist est volontairement sur GitHub (choix de l'auteur),
+# pour pouvoir compiler et tester l'app sans le copier à la main.

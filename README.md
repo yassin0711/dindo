@@ -69,7 +69,7 @@ Les champs `deaths` et `sold` de la bande sont des compteurs. Ils sont mis à jo
 1. **Firebase** : déjà configuré, dans le projet Firebase **dindo** (`dindo-752c1`).
    - Authentication : E-mail/Mot de passe et Google activés.
    - Firestore (Europe, `eur3`) avec les règles de `firestore.rules`.
-   - App iOS `com.dindo.app` : son `GoogleService-Info.plist` est dans `Dindo/Resources/`. Il n'est jamais envoyé sur GitHub.
+   - App iOS `com.dindo.app` : son `GoogleService-Info.plist` est dans `Dindo/Resources/` (il est aussi sur GitHub).
 2. **Info.plist** (à la racine) : contient déjà le `REVERSED_CLIENT_ID`, nécessaire pour revenir dans l'app après la connexion Google.
 3. Ouvrez `Dindo.xcodeproj` dans Xcode 16.2. Les paquets (Firebase 11, GoogleSignIn 8, Google Mobile Ads 12) se téléchargent tout seuls.
 4. Choisissez un simulateur iPhone, puis Product → Run.
