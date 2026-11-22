@@ -21,7 +21,9 @@ final class WeatherService: ObservableObject {
 
         do {
             guard let url = URL(string: address) else { throw URLError(.badURL) }
-            let (data, response) = try await URLSession.shared.data(from: url)
+            // 15 secondes maximum : sinon le chargement pourrait tourner sans fin
+            let request = URLRequest(url: url, timeoutInterval: 15)
+            let (data, response) = try await URLSession.shared.data(for: request)
             guard (response as? HTTPURLResponse)?.statusCode == 200 else { throw URLError(.badServerResponse) }
             weather = try JSONDecoder().decode(Weather.self, from: data)
             isFromCache = false

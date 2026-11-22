@@ -29,6 +29,8 @@ struct DindoApp: App {
                 .environmentObject(flocks)
                 .environmentObject(weather)
                 .preferredColorScheme(theme.colorScheme)
+                // Couleur principale de l'app (Assets → AccentColor : brun-orangé de la dinde)
+                .tint(Color("AccentColor"))
                 .environment(\.locale, language.locale)
                 .environment(\.layoutDirection, language.layoutDirection)
                 .task {
