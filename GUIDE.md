@@ -263,7 +263,7 @@ Chaque service a `isLoading` (vrai tant que Firestore n'a pas répondu) et `show
 | `@StateObject` | `FlockDetailView` crée et garde son `FlockDataService` |
 | `@ObservedObject` | Les écrans enfants reçoivent ce même service (`HistoryView(data: data)`) |
 | `@EnvironmentObject` | `auth`, `flocks`, `weather` partagés par toute l'app |
-| `@AppStorage` / `@SceneStorage` | Thème, langue, position de la ferme / onglet choisi |
+| `@AppStorage` | Thème, langue, position de la ferme, onglet choisi |
 | Générique `<T: Decodable>` | `FlockDataService.listen` : la même fonction écoute les trois sous-collections |
 
 ---

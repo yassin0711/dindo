@@ -32,7 +32,10 @@ struct DindoApp: App {
                 .environment(\.locale, language.locale)
                 .environment(\.layoutDirection, language.layoutDirection)
                 .task {
-                    await NotificationService.requestPermission()
+                    // Pas de demande d'autorisation pendant les captures d'écran automatiques (GitHub Actions)
+                    if !UserDefaults.standard.bool(forKey: "screenshots") {
+                        await NotificationService.requestPermission()
+                    }
                     await InterstitialAdService.shared.preload()
                 }
                 // Retour dans l'app après la fenêtre de connexion Google

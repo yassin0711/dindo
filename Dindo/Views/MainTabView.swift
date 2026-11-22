@@ -6,8 +6,8 @@ enum AppTab: String {
 
 struct MainTabView: View {
     @EnvironmentObject private var flocks: FlockService
-    // @SceneStorage : l'onglet choisi est conservé même quand l'interface est reconstruite
-    @SceneStorage("selectedTab") private var selectedTab: AppTab = .dashboard
+    // @AppStorage : l'onglet choisi est conservé même quand l'interface est reconstruite
+    @AppStorage("selectedTab") private var selectedTab: AppTab = .dashboard
 
     var body: some View {
         TabView(selection: $selectedTab) {

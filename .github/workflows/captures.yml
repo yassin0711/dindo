@@ -1,0 +1,92 @@
+# Captures d'écran de l'app dans le simulateur iOS (Xcode 16.2).
+# Se lance quand le message du commit contient [captures].
+# Les images sont publiées sur la branche « captures » du dépôt.
+name: Captures d'écran
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  captures:
+    if: github.event_name == 'workflow_dispatch' || contains(github.event.head_commit.message, '[captures]')
+    runs-on: macos-15
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Choisir Xcode 16.2
+        run: |
+          for v in 16.2 16.3 16.4 16.1; do
+            if [ -d "/Applications/Xcode_$v.app" ]; then
+              sudo xcode-select -s "/Applications/Xcode_$v.app"
+              break
+            fi
+          done
+          sdk=$(xcrun --sdk iphonesimulator --show-sdk-version)
+          if ! xcrun simctl list runtimes | grep -q "iOS $sdk"; then
+            xcodebuild -downloadPlatform iOS
+          fi
+
+      - name: Compiler pour le simulateur
+        run: |
+          set -o pipefail
+          xcodebuild -project Dindo.xcodeproj -scheme Dindo \
+            -destination 'generic/platform=iOS Simulator' \
+            -derivedDataPath build CODE_SIGNING_ALLOWED=NO build | tail -5
+
+      - name: Démarrer un iPhone et installer l'app
+        run: |
+          udid=$(xcrun simctl list devices available | grep -m1 -E "iPhone 1[5-9] \(" | grep -oE "[0-9A-F-]{36}")
+          echo "UDID=$udid" >> $GITHUB_ENV
+          xcrun simctl boot "$udid"
+          xcrun simctl bootstatus "$udid"
+          # Barre d'état propre : 9:41, batterie pleine
+          xcrun simctl status_bar "$udid" override --time "9:41" --batteryState charged --batteryLevel 100
+          xcrun simctl install "$udid" build/Build/Products/Debug-iphonesimulator/Dindo.app
+
+      - name: Captures
+        run: |
+          mkdir -p captures
+          shot() {   # shot <nom> <attente> <arguments de lancement…>
+            name=$1; wait=$2; shift 2
+            xcrun simctl terminate "$UDID" com.dindo.app 2>/dev/null || true
+            xcrun simctl launch "$UDID" com.dindo.app -screenshots YES "$@"
+            sleep "$wait"
+            xcrun simctl io "$UDID" screenshot "captures/$name.png"
+          }
+
+          # 1. Avec Firebase : écran de connexion
+          shot 01-connexion-fr 8 -app.language fr -app.theme light
+          shot 02-connexion-ar 6 -app.language ar -app.theme light
+          shot 03-connexion-en-sombre 6 -app.language en -app.theme dark
+
+          # 2. Sans Firebase (plist retiré de l'app installée) : les onglets s'ouvrent sans connexion
+          app=$(xcrun simctl get_app_container "$UDID" com.dindo.app app)
+          rm -f "$app/GoogleService-Info.plist"
+
+          shot 04-accueil-fr 15 -app.language fr -app.theme light -selectedTab dashboard
+          shot 05-bandes-fr 6 -app.language fr -app.theme light -selectedTab flocks
+          shot 06-ferme-fr 15 -app.language fr -app.theme light -selectedTab farm
+          shot 07-reglages-fr 6 -app.language fr -app.theme light -selectedTab settings
+          shot 08-accueil-en-sombre 12 -app.language en -app.theme dark -selectedTab dashboard
+          shot 09-ferme-en-sombre 12 -app.language en -app.theme dark -selectedTab farm
+          shot 10-reglages-en-sombre 6 -app.language en -app.theme dark -selectedTab settings
+          shot 11-accueil-ar 12 -app.language ar -app.theme light -selectedTab dashboard
+          shot 12-ferme-ar 12 -app.language ar -app.theme light -selectedTab farm
+          shot 13-reglages-ar 6 -app.language ar -app.theme light -selectedTab settings
+          ls -la captures
+
+      - name: Publier sur la branche « captures »
+        run: |
+          cd captures
+          git init -q -b captures
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add -A
+          git commit -q -m "Captures d'écran ($GITHUB_SHA)"
+          git push -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" captures
