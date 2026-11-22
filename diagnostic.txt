@@ -1,0 +1,132 @@
+Open-Meteo : HTTP 000 en 20.055450s
+Open-Meteo injoignable
+__preview.dylib
+abseil_abslWrapper.bundle
+AppAuth_AppAuth.bundle
+AppAuth_AppAuthCore.bundle
+AppIcon60x60@2x.png
+AppIcon76x76@2x~ipad.png
+ar.lproj
+Assets.car
+Dindo
+Dindo.debug.dylib
+en.lproj
+Firebase_FirebaseAuth.bundle
+Firebase_FirebaseCore.bundle
+Firebase_FirebaseCoreExtension.bundle
+Firebase_FirebaseCoreInternal.bundle
+Firebase_FirebaseFirestore.bundle
+fr.lproj
+Frameworks
+GoogleService-Info.plist
+GoogleSignIn_GoogleSignIn.bundle
+GoogleUtilities_GoogleUtilities-AppDelegateSwizzler.bundle
+GoogleUtilities_GoogleUtilities-Environment.bundle
+GoogleUtilities_GoogleUtilities-Logger.bundle
+GoogleUtilities_GoogleUtilities-Network.bundle
+GoogleUtilities_GoogleUtilities-NSData.bundle
+GoogleUtilities_GoogleUtilities-Reachability.bundle
+GoogleUtilities_GoogleUtilities-UserDefaults.bundle
+gRPC_grpcppWrapper.bundle
+gRPC_grpcWrapper.bundle
+gRPC_opensslWrapper.bundle
+GTMAppAuth_GTMAppAuth.bundle
+GTMSessionFetcher_GTMSessionFetcherCore.bundle
+Info.plist
+leveldb_leveldb.bundle
+nanopb_nanopb.bundle
+PkgInfo
+Promises_FBLPromises.bundle
+  "CFBundleIcons" => {
+    "CFBundlePrimaryIcon" => {
+      "CFBundleIconFiles" => [
+        0 => "AppIcon60x60"
+      "CFBundleIconName" => "AppIcon"
+  "CFBundleIcons~ipad" => {
+    "CFBundlePrimaryIcon" => {
+      "CFBundleIconFiles" => [
+        0 => "AppIcon60x60"
+        1 => "AppIcon76x76"
+  "NSAccentColorName" => "AccentColor"
+    "Name" : "AccentColor",
+    "Name" : "AppIcon",
+2026-11-22 13:21:19.983 Df Dindo[36411:195c1] [com.apple.CFNetwork:Default] Task <DDB6EEC1-79D9-4D31-8BAF-FA0C88B3AA9C>.<1> done using Connection 3
+2026-11-22 13:21:19.983 Df Dindo[36411:195ad] [com.apple.CFNetwork:Summary] Task <DDB6EEC1-79D9-4D31-8BAF-FA0C88B3AA9C>.<1> summary for task success {transaction_duration_ms=2171, response_status=200, connection=3, protocol="http/1.1", domain_lookup_duration_ms=958, connect_duration_ms=207, secure_connection_duration_ms=166, private_relay=false, request_start_ms=2042, request_duration_ms=0, response_start_ms=2170, response_duration_ms=0, request_bytes=433, request_throughput_kbps=3645, response_bytes=725, response_throughput_kbps=2269, cache_hit=true}
+2026-11-22 13:21:19.983 Df Dindo[36411:195ad] [com.apple.CFNetwork:Default] Task <DDB6EEC1-79D9-4D31-8BAF-FA0C88B3AA9C>.<1> finished successfully
+2026-11-22 13:21:19.985 Df Dindo[36411:195c1] [com.apple.CFNetwork:Default] Task <FBF46603-6A2D-4D76-AADB-880F496E7940>.<2> response ended
+2026-11-22 13:21:19.985 Df Dindo[36411:195c1] [com.apple.CFNetwork:Summary] Task <FBF46603-6A2D-4D76-AADB-880F496E7940>.<2> summary for task success {transaction_duration_ms=2160, response_status=404, connection=2, protocol="h2", domain_lookup_duration_ms=565, connect_duration_ms=402, secure_connection_duration_ms=314, private_relay=false, request_start_ms=2036, request_duration_ms=0, response_start_ms=2156, response_duration_ms=2, request_bytes=170, request_throughput_kbps=1825, response_bytes=294, response_throughput_kbps=100, cache_hit=false}
+2026-11-22 13:21:19.985 Df Dindo[36411:195c1] [com.apple.CFNetwork:Default] Task <FBF46603-6A2D-4D76-AADB-880F496E7940>.<2> finished successfully
+2026-11-22 13:21:20.211 Df Dindo[36411:195c4] [com.apple.CFNetwork:Default] Task <A7107119-1135-49E5-8A7C-29937126FC38>.<3> received response, status 200 content K
+2026-11-22 13:21:20.211 Df Dindo[36411:195c4] [com.apple.CFNetwork:Default] Task <A7107119-1135-49E5-8A7C-29937126FC38>.<3> done using Connection 1
+2026-11-22 13:21:20.212 Df Dindo[36411:195c4] [com.apple.CFNetwork:Default] Task <A7107119-1135-49E5-8A7C-29937126FC38>.<3> response ended
+2026-11-22 13:21:20.213 Df Dindo[36411:195c4] [com.apple.CFNetwork:Summary] Task <A7107119-1135-49E5-8A7C-29937126FC38>.<3> summary for task success {transaction_duration_ms=1849, response_status=200, connection=1, reused=1, reused_after_ms=0, request_start_ms=1328, request_duration_ms=0, response_start_ms=1848, response_duration_ms=1, request_bytes=990, request_throughput_kbps=1603, response_bytes=26031, response_throughput_kbps=21878, cache_hit=false}
+2026-11-22 13:21:20.213 Df Dindo[36411:195c4] [com.apple.CFNetwork:Default] Task <A7107119-1135-49E5-8A7C-29937126FC38>.<3> finished successfully
+2026-11-22 13:21:21.106 Df Dindo[36411:195ab] [com.apple.UIKit:BackgroundTask] Created background task <_UIBackgroundTaskInfo: 0x600001823600>: taskID = 2, taskName = com.google.backgroundPing, creationTime = 1341 (elapsed = 0).
+2026-11-22 13:21:21.106 Df Dindo[36411:195b1] [com.apple.CFNetwork:Default] Task <77D368A1-9398-4CB9-9EA4-C5B7E2140927>.<1> resuming, timeouts(60.0, 604800.0) qos(0x19) voucher((null)) activity(00000000-0000-0000-0000-000000000000)
+2026-11-22 13:21:21.167 Df Dindo[36411:195b1] [com.apple.CFNetwork:Default] Task <77D368A1-9398-4CB9-9EA4-C5B7E2140927>.<1> setting up Connection 8
+2026-11-22 13:21:21.208 Df Dindo[36411:195ad] [com.apple.CFNetwork:Default] Task <77D368A1-9398-4CB9-9EA4-C5B7E2140927>.<1> auth completion disp=1 cred=0x0
+2026-11-22 13:21:21.236 Df Dindo[36411:195b1] [com.apple.CFNetwork:Default] Task <77D368A1-9398-4CB9-9EA4-C5B7E2140927>.<1> now using Connection 8
+2026-11-22 13:21:21.237 Df Dindo[36411:195b1] [com.apple.cfnetwork:h3stream] 0x104fedc68 ID=0 Task <77D368A1-9398-4CB9-9EA4-C5B7E2140927>.<1> sent request, body N 0
+2026-11-22 13:21:21.283 Df Dindo[36411:195c4] [com.apple.cfnetwork:h3stream] 0x104fedc68 ID=0 Task <77D368A1-9398-4CB9-9EA4-C5B7E2140927>.<1> received response, status 200 content K
+2026-11-22 13:21:21.289 Df Dindo[36411:195c4] [com.apple.CFNetwork:Default] Task <77D368A1-9398-4CB9-9EA4-C5B7E2140927>.<1> response ended
+2026-11-22 13:21:21.289 Df Dindo[36411:195c4] [com.apple.CFNetwork:Default] Task <77D368A1-9398-4CB9-9EA4-C5B7E2140927>.<1> done using Connection 8
+2026-11-22 13:21:21.289 Df Dindo[36411:195b1] [com.apple.CFNetwork:Summary] Task <77D368A1-9398-4CB9-9EA4-C5B7E2140927>.<1> summary for task success {transaction_duration_ms=182, response_status=200, connection=8, protocol="h3", domain_lookup_duration_ms=10, connect_duration_ms=50, secure_connection_duration_ms=47, private_relay=false, request_start_ms=129, request_duration_ms=1, response_start_ms=175, response_duration_ms=6, request_bytes=1032, request_throughput_kbps=612, response_bytes=328, response_throughput_kbps=46, cache_hit=false}
+2026-11-22 13:21:21.289 Df Dindo[36411:195b1] [com.apple.CFNetwork:Default] Task <77D368A1-9398-4CB9-9EA4-C5B7E2140927>.<1> finished successfully
+2026-11-22 13:21:42.334 Df Dindo[37167:19e0d] [com.apple.UIKit:BackgroundTask] Created background task <_UIBackgroundTaskInfo: 0x60000170ee40>: taskID = 1, taskName = Launch Background Task for Coalescing, creationTime = 1363 (elapsed = 0).
+2026-11-22 13:21:43.008 Df Dindo[37167:19e0d] [com.apple.CFNetwork:Default] Task <7A440305-4AD3-4A63-ABAB-A0DF718705CC>.<1> resuming, timeouts(60.0, 180.0) qos(0x19) voucher((null)) activity(00000000-0000-0000-0000-000000000000)
+2026-11-22 13:21:43.012 Df Dindo[37167:19e0d] [com.apple.CFNetwork:Default] Task <F392E099-14BD-4065-94B9-9E46E2CD3F18>.<2> resuming, timeouts(60.0, 180.0) qos(0x19) voucher((null)) activity(00000000-0000-0000-0000-000000000000)
+2026-11-22 13:21:43.029 Df Dindo[37167:19e15] [com.apple.xpc:connection] [0x102d1d540] failed to do a bootstrap look-up: xpc_error=[3: No such process]
+2026-11-22 13:21:43.030 Df Dindo[37167:19e15] [com.apple.xpc:connection] [0x104820870] failed to do a bootstrap look-up: xpc_error=[3: No such process]
+2026-11-22 13:21:43.044 E  Dindo[37167:19e9e] [com.apple.CoreTelephony:Client] Updating selectors failed with: Error Domain=NSCocoaErrorDomain Code=4099 "The connection to service named com.apple.commcenter.coretelephony.xpc was invalidated: failed at lookup with error 3 - No such process." UserInfo={NSDebugDescription=The connection to service named com.apple.commcenter.coretelephony.xpc was invalidated: failed at lookup with error 3 - No such process.}
+2026-11-22 13:21:43.045 E  Dindo[37167:19e15] [com.apple.CoreTelephony:Client] Synchronous remote object proxy returned error: Error Domain=NSCocoaErrorDomain Code=4099 "The connection to service named com.apple.commcenter.coretelephony.xpc was invalidated: failed at lookup with error 3 - No such process." UserInfo={NSDebugDescription=The connection to service named com.apple.commcenter.coretelephony.xpc was invalidated: failed at lookup with error 3 - No such process.}
+2026-11-22 13:21:43.048 Df Dindo[37167:19e15] [com.apple.xpc:connection] [0x102d1d540] failed to do a bootstrap look-up: xpc_error=[3: No such process]
+2026-11-22 13:21:43.056 E  Dindo[37167:19e15] [com.apple.CoreTelephony:Client] Synchronous remote object proxy returned error: Error Domain=NSCocoaErrorDomain Code=4099 "The connection to service named com.apple.commcenter.coretelephony.xpc was invalidated: failed at lookup with error 3 - No such process." UserInfo={NSDebugDescription=The connection to service named com.apple.commcenter.coretelephony.xpc was invalidated: failed at lookup with error 3 - No such process.}
+2026-11-22 13:21:43.056 E  Dindo[37167:19e9e] [com.apple.CoreTelephony:Client] Updating selectors failed with: Error Domain=NSCocoaErrorDomain Code=4099 "The connection to service named com.apple.commcenter.coretelephony.xpc was invalidated: failed at lookup with error 3 - No such process." UserInfo={NSDebugDescription=The connection to service named com.apple.commcenter.coretelephony.xpc was invalidated: failed at lookup with error 3 - No such process.}
+2026-11-22 13:21:43.057 Df Dindo[37167:19e15] [com.apple.xpc:connection] [0x104820870] failed to do a bootstrap look-up: xpc_error=[3: No such process]
+2026-11-22 13:21:43.060 E  Dindo[37167:19e15] [com.apple.CoreTelephony:Client] Synchronous remote object proxy returned error: Error Domain=NSCocoaErrorDomain Code=4099 "The connection to service named com.apple.commcenter.coretelephony.xpc was invalidated: failed at lookup with error 3 - No such process." UserInfo={NSDebugDescription=The connection to service named com.apple.commcenter.coretelephony.xpc was invalidated: failed at lookup with error 3 - No such process.}
+2026-11-22 13:21:43.060 E  Dindo[37167:19e9e] [com.apple.CoreTelephony:Client] Updating selectors failed with: Error Domain=NSCocoaErrorDomain Code=4099 "The connection to service named com.apple.commcenter.coretelephony.xpc was invalidated: failed at lookup with error 3 - No such process." UserInfo={NSDebugDescription=The connection to service named com.apple.commcenter.coretelephony.xpc was invalidated: failed at lookup with error 3 - No such process.}
+2026-11-22 13:21:43.089 Df Dindo[37167:19e9e] [com.apple.xpc:connection] [0x102d1d540] failed to do a bootstrap look-up: xpc_error=[3: No such process]
+2026-11-22 13:21:43.097 E  Dindo[37167:19e9e] [com.apple.CoreTelephony:Client] Updating selectors failed with: Error Domain=NSCocoaErrorDomain Code=4099 "The connection to service named com.apple.commcenter.coretelephony.xpc was invalidated: failed at lookup with error 3 - No such process." UserInfo={NSDebugDescription=The connection to service named com.apple.commcenter.coretelephony.xpc was invalidated: failed at lookup with error 3 - No such process.}
+2026-11-22 13:21:43.098 E  Dindo[37167:19e9e] [com.apple.CoreTelephony:Client] Updating selectors after delegate addition failed with: Error Domain=NSCocoaErrorDomain Code=4099 "The connection to service named com.apple.commcenter.coretelephony.xpc was invalidated: failed at lookup with error 3 - No such process." UserInfo={NSDebugDescription=The connection to service named com.apple.commcenter.coretelephony.xpc was invalidated: failed at lookup with error 3 - No such process.}
+2026-11-22 13:21:43.303 Df Dindo[37167:19e9f] [com.apple.CFNetwork:Default] Task <7A440305-4AD3-4A63-ABAB-A0DF718705CC>.<1> setting up Connection 1
+2026-11-22 13:21:43.334 Df Dindo[37167:19e9f] [com.apple.CFNetwork:Default] Task <F392E099-14BD-4065-94B9-9E46E2CD3F18>.<2> setting up Connection 2
+2026-11-22 13:21:43.625 Df Dindo[37167:19e12] [com.apple.CFNetwork:Default] Task <068E5EB9-F070-410D-9D37-DA509E18AC6B>.<3> resuming, timeouts(60.0, 180.0) qos(0x19) voucher((null)) activity(00000000-0000-0000-0000-000000000000)
+2026-11-22 13:21:43.701 Df Dindo[37167:19e9f] [com.apple.CFNetwork:Default] Task <068E5EB9-F070-410D-9D37-DA509E18AC6B>.<3> waiting for setup of Connection 1
+2026-11-22 13:21:43.939 Df Dindo[37167:19e12] [com.apple.CFNetwork:Default] Task <7A440305-4AD3-4A63-ABAB-A0DF718705CC>.<1> auth completion disp=1 cred=0x0
+2026-11-22 13:21:44.277 Df Dindo[37167:19e12] [com.apple.CFNetwork:Default] Task <F392E099-14BD-4065-94B9-9E46E2CD3F18>.<2> auth completion disp=1 cred=0x0
+2026-11-22 13:21:44.449 Df Dindo[37167:19e9f] [com.apple.network:quic] quic_frame_write_CONNECTION_CLOSE [C1.1.1.2:2] [-f30c7eccb3f20943] sending CONNECTION_CLOSE, code NO_ERROR, type UNKNOWN, reason <null>
+2026-11-22 13:21:44.469 Df Dindo[37167:19e9f] [com.apple.network:quic] quic_frame_write_CONNECTION_CLOSE [C1.1.1.3:2] [-e9711a4f14e3c28d] sending CONNECTION_CLOSE, code NO_ERROR, type UNKNOWN, reason <null>
+2026-11-22 13:21:44.480 Df Dindo[37167:19e9f] [com.apple.CFNetwork:Default] Task <7A440305-4AD3-4A63-ABAB-A0DF718705CC>.<1> now using Connection 1
+2026-11-22 13:21:44.480 Df Dindo[37167:19e9f] [com.apple.CFNetwork:Default] Task <068E5EB9-F070-410D-9D37-DA509E18AC6B>.<3> now using Connection 1
+2026-11-22 13:21:44.490 Df Dindo[37167:19e9f] [com.apple.cfnetwork:h3stream] 0x10484d278 ID=0 Task <7A440305-4AD3-4A63-ABAB-A0DF718705CC>.<1> sent request, body N 0
+2026-11-22 13:21:44.490 Df Dindo[37167:19e9f] [com.apple.cfnetwork:h3stream] 0x102d45818 ID=4 Task <068E5EB9-F070-410D-9D37-DA509E18AC6B>.<3> sent request, body N 0
+2026-11-22 13:21:44.544 Df Dindo[37167:19e9f] [com.apple.network:quic] quic_frame_write_CONNECTION_CLOSE [C2.1.1.1:2] [-f7c77e326276194c] sending CONNECTION_CLOSE, code NO_ERROR, type UNKNOWN, reason <null>
+2026-11-22 13:21:44.545 Df Dindo[37167:19e9f] [com.apple.network:quic] quic_frame_write_CONNECTION_CLOSE [C2.1.1.2:2] [-f8dd3334ce5c7d97] sending CONNECTION_CLOSE, code NO_ERROR, type UNKNOWN, reason <null>
+2026-11-22 13:21:44.548 Df Dindo[37167:19e9f] [com.apple.CFNetwork:Default] Task <F392E099-14BD-4065-94B9-9E46E2CD3F18>.<2> now using Connection 2
+2026-11-22 13:21:44.548 Df Dindo[37167:19e9f] [com.apple.CFNetwork:Default] Task <F392E099-14BD-4065-94B9-9E46E2CD3F18>.<2> sent request, body N 0
+2026-11-22 13:21:44.584 Df Dindo[37167:19e15] [com.apple.cfnetwork:h3stream] 0x10484d278 ID=0 Task <7A440305-4AD3-4A63-ABAB-A0DF718705CC>.<1> received response, status 404 content U
+2026-11-22 13:21:44.720 Df Dindo[37167:19e15] [com.apple.CFNetwork:Default] Task <7A440305-4AD3-4A63-ABAB-A0DF718705CC>.<1> response ended
+2026-11-22 13:21:44.720 Df Dindo[37167:19e15] [com.apple.CFNetwork:Default] Task <7A440305-4AD3-4A63-ABAB-A0DF718705CC>.<1> done using Connection 1
+2026-11-22 13:21:44.720 Df Dindo[37167:19e9f] [com.apple.CFNetwork:Summary] Task <7A440305-4AD3-4A63-ABAB-A0DF718705CC>.<1> summary for task success {transaction_duration_ms=1683, response_status=404, connection=1, protocol="h3", domain_lookup_duration_ms=48, connect_duration_ms=1064, secure_connection_duration_ms=1038, private_relay=false, request_start_ms=1442, request_duration_ms=9, response_start_ms=1546, response_duration_ms=135, request_bytes=152, request_throughput_kbps=14, response_bytes=94, response_throughput_kbps=0, cache_hit=false}
+2026-11-22 13:21:44.721 Df Dindo[37167:19e9f] [com.apple.CFNetwork:Default] Task <7A440305-4AD3-4A63-ABAB-A0DF718705CC>.<1> finished successfully
+2026-11-22 13:21:44.721 Df Dindo[37167:19e15] [com.apple.CFNetwork:Default] Task <F392E099-14BD-4065-94B9-9E46E2CD3F18>.<2> received response, status 404 content U
+2026-11-22 13:21:44.726 Df Dindo[37167:19e15] [com.apple.CFNetwork:Default] Task <F392E099-14BD-4065-94B9-9E46E2CD3F18>.<2> done using Connection 2
+2026-11-22 13:21:44.890 Df Dindo[37167:19e15] [com.apple.CFNetwork:Default] Task <F392E099-14BD-4065-94B9-9E46E2CD3F18>.<2> response ended
+2026-11-22 13:21:44.890 Df Dindo[37167:19e15] [com.apple.CFNetwork:Summary] Task <F392E099-14BD-4065-94B9-9E46E2CD3F18>.<2> summary for task success {transaction_duration_ms=1850, response_status=404, connection=2, protocol="h2", domain_lookup_duration_ms=390, connect_duration_ms=446, secure_connection_duration_ms=341, private_relay=false, request_start_ms=1508, request_duration_ms=0, response_start_ms=1681, response_duration_ms=168, request_bytes=170, request_throughput_kbps=2478, response_bytes=294, response_throughput_kbps=1, cache_hit=false}
+2026-11-22 13:21:44.890 Df Dindo[37167:19e15] [com.apple.CFNetwork:Default] Task <F392E099-14BD-4065-94B9-9E46E2CD3F18>.<2> finished successfully
+2026-11-22 13:21:44.932 Df Dindo[37167:19e9a] [com.apple.cfnetwork:h3stream] 0x102d45818 ID=4 Task <068E5EB9-F070-410D-9D37-DA509E18AC6B>.<3> received response, status 200 content K
+2026-11-22 13:21:44.934 Df Dindo[37167:19e9a] [com.apple.CFNetwork:Default] Task <068E5EB9-F070-410D-9D37-DA509E18AC6B>.<3> response ended
+2026-11-22 13:21:44.934 Df Dindo[37167:19e9a] [com.apple.CFNetwork:Default] Task <068E5EB9-F070-410D-9D37-DA509E18AC6B>.<3> done using Connection 1
+2026-11-22 13:21:44.934 Df Dindo[37167:19e9a] [com.apple.CFNetwork:Summary] Task <068E5EB9-F070-410D-9D37-DA509E18AC6B>.<3> summary for task success {transaction_duration_ms=1299, response_status=200, connection=1, reused=1, reused_after_ms=0, request_start_ms=845, request_duration_ms=9, response_start_ms=1296, response_duration_ms=3, request_bytes=1121, request_throughput_kbps=113, response_bytes=25937, response_throughput_kbps=7393, cache_hit=false}
+2026-11-22 13:21:44.935 Df Dindo[37167:19e9a] [com.apple.CFNetwork:Default] Task <068E5EB9-F070-410D-9D37-DA509E18AC6B>.<3> finished successfully
+2026-11-22 13:21:45.318 Df Dindo[37167:19e9a] [com.apple.UIKit:BackgroundTask] Created background task <_UIBackgroundTaskInfo: 0x6000017cea40>: taskID = 2, taskName = com.google.backgroundPing, creationTime = 1365 (elapsed = 0).
+2026-11-22 13:21:45.318 Df Dindo[37167:19e9a] [com.apple.CFNetwork:Default] Task <ACFCB2F3-03C0-4D78-8E49-4843F6C8F9BC>.<1> resuming, timeouts(60.0, 604800.0) qos(0x19) voucher((null)) activity(00000000-0000-0000-0000-000000000000)
+2026-11-22 13:21:45.351 Df Dindo[37167:19e21] [com.apple.CFNetwork:Default] Task <ACFCB2F3-03C0-4D78-8E49-4843F6C8F9BC>.<1> setting up Connection 9
+2026-11-22 13:21:45.387 Df Dindo[37167:19e21] [com.apple.CFNetwork:Default] Task <ACFCB2F3-03C0-4D78-8E49-4843F6C8F9BC>.<1> auth completion disp=1 cred=0x0
+2026-11-22 13:21:45.416 Df Dindo[37167:19e9c] [com.apple.CFNetwork:Default] Task <ACFCB2F3-03C0-4D78-8E49-4843F6C8F9BC>.<1> now using Connection 9
+2026-11-22 13:21:45.416 Df Dindo[37167:19e9c] [com.apple.cfnetwork:h3stream] 0x1048332c8 ID=0 Task <ACFCB2F3-03C0-4D78-8E49-4843F6C8F9BC>.<1> sent request, body N 0
+2026-11-22 13:21:45.467 Df Dindo[37167:19e9a] [com.apple.cfnetwork:h3stream] 0x1048332c8 ID=0 Task <ACFCB2F3-03C0-4D78-8E49-4843F6C8F9BC>.<1> received response, status 200 content K
+2026-11-22 13:21:45.504 Df Dindo[37167:19e9a] [com.apple.CFNetwork:Default] Task <ACFCB2F3-03C0-4D78-8E49-4843F6C8F9BC>.<1> response ended
+2026-11-22 13:21:45.504 Df Dindo[37167:19e9a] [com.apple.CFNetwork:Default] Task <ACFCB2F3-03C0-4D78-8E49-4843F6C8F9BC>.<1> done using Connection 9
+2026-11-22 13:21:45.505 Df Dindo[37167:19e9c] [com.apple.CFNetwork:Summary] Task <ACFCB2F3-03C0-4D78-8E49-4843F6C8F9BC>.<1> summary for task success {transaction_duration_ms=185, response_status=200, connection=9, protocol="h3", domain_lookup_duration_ms=3, connect_duration_ms=57, secure_connection_duration_ms=53, private_relay=false, request_start_ms=96, request_duration_ms=0, response_start_ms=147, response_duration_ms=37, request_bytes=1027, request_throughput_kbps=1247, response_bytes=328, response_throughput_kbps=8, cache_hit=false}
+2026-11-22 13:21:45.505 Df Dindo[37167:19e9c] [com.apple.CFNetwork:Default] Task <ACFCB2F3-03C0-4D78-8E49-4843F6C8F9BC>.<1> finished successfully
